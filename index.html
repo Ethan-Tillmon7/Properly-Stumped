@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Properly Stumped LLC — professional stump grinding and removal in the Kansas City area. Residential, sub-contracting, and golf course services. Call (816) 237-8758 for a free quote." />
+  <title>Properly Stumped LLC — Stump Grinding &amp; Removal</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ======== NAVIGATION ======== -->
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Properly Stumped LLC home">
+        Properly Stumped
+        <span>LLC &mdash; Stump Grinding</span>
+      </a>
+
+      <!-- Desktop links -->
+      <div class="nav-links" role="list">
+        <a href="index.html" class="active" role="listitem">Home</a>
+        <a href="services.html" role="listitem">Services &amp; Scheduling</a>
+        <a href="about.html" role="listitem">About &amp; FAQ</a>
+        <a href="https://calendar.app.google/BYf6WkoEropTFHU68"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="nav-cta"
+           role="listitem">Book Now</a>
+      </div>
+
+      <!-- Hamburger (mobile) -->
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile nav panel -->
+  <div class="nav-mobile" id="mobile-nav" role="navigation" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services &amp; Scheduling</a>
+    <a href="about.html">About &amp; FAQ</a>
+    <a href="https://calendar.app.google/BYf6WkoEropTFHU68"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="nav-cta">Book Now</a>
+  </div>
+
+  <!-- ======== HERO ======== -->
+  <section class="hero" aria-labelledby="hero-heading">
+    <div class="container">
+      <div class="hero-content">
+
+        <span class="hero-eyebrow">Kansas City Area &middot; Free Quotes</span>
+
+        <h1 class="hero-headline" id="hero-heading">
+          Tree Stumps<br>
+          Removed.<br>
+          <em>Properly.</em>
+        </h1>
+
+        <p class="hero-subhead">
+          When you decide it&rsquo;s time to get rid of that stump, you just want it done.
+          We get that! Allow us to deal with the trouble of removing it, properly.
+        </p>
+
+        <ul class="hero-bullets" aria-label="Key benefits">
+          <li>No big mess. No stress. You call, we answer.</li>
+          <li>We offer cleanup and haul away of mulch if you don&rsquo;t want it.</li>
+          <li>Services for residential, sub-contracting, and golf courses.</li>
+        </ul>
+
+        <div class="hero-ctas">
+          <a href="tel:+18162378758" class="btn btn-primary">
+            &#9742; Call (816) 237-8758
+          </a>
+          <a href="sms:+18162378758" class="btn btn-outline">
+            &#128172; Text For Quote
+          </a>
+          <a href="services.html" class="btn btn-outline">
+            Explore Services &#8594;
+          </a>
+          <a href="https://missouri-811.org/"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="btn btn-warning">
+            &#9888; Call BEFORE You Dig!
+          </a>
+        </div>
+
+        <p class="hero-quote-note">
+          Contact us for a free quote &mdash; we&rsquo;re happy to help!
+        </p>
+
+      </div>
+    </div>
+    <div class="hero-clip" aria-hidden="true"></div>
+  </section>
+
+  <!-- ======== FOOTER ======== -->
+  <footer class="site-footer" aria-label="Site footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          Properly Stumped
+          <span>LLC &mdash; Stump Grinding &amp; Removal</span>
+        </div>
+        <div class="footer-contact">
+          <a href="mailto:ericoconnor@properlystumped.org">ericoconnor@properlystumped.org</a>
+          <a href="tel:+18162378758">(816) 237-8758</a>
+        </div>
+        <p class="footer-copy">
+          &copy; <span id="year"></span> Properly Stumped LLC. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======== SCRIPTS ======== -->
+  <script>
+    // Mobile nav toggle
+    const toggle = document.querySelector('.nav-toggle');
+    const mobileNav = document.querySelector('.nav-mobile');
+
+    toggle.addEventListener('click', () => {
+      const isOpen = mobileNav.classList.toggle('open');
+      toggle.classList.toggle('open', isOpen);
+      toggle.setAttribute('aria-expanded', isOpen);
+    });
+
+    // Close mobile nav when a link is clicked
+    mobileNav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileNav.classList.remove('open');
+        toggle.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // Set current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
