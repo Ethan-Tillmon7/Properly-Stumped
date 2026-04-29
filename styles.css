@@ -622,7 +622,6 @@ ul { list-style: none; }
   background: var(--forest);
   border-color: var(--ember);
   color: var(--cream);
-  grid-column: 1 / -1;
 }
 
 .service-card.featured::before {
@@ -991,10 +990,6 @@ details.faq-item[open] summary { color: var(--ember); }
 
   .services-grid {
     grid-template-columns: 1fr;
-  }
-
-  .service-card.featured {
-    grid-column: 1;
   }
 
   .info-grid {
