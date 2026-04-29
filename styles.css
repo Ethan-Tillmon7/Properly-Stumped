@@ -678,42 +678,67 @@ ul { list-style: none; }
 .info-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1.25rem;
-  margin-top: 2rem;
+  gap: 1.1rem;
+  margin-top: 1.5rem;
 }
 
 .info-card {
-  padding: 1.5rem;
-  background: var(--parchment);
-  border-left: 4px solid var(--ember);
+  padding: 1.1rem 1.25rem 1.3rem;
+  background: var(--cream);
+  border: 2px solid var(--soil);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-card::before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: -5px;
+  bottom: -5px;
+  border: 2px solid var(--ember);
+  z-index: -1;
 }
 
 .info-icon {
-  font-size: 1.75rem;
-  margin-bottom: 0.75rem;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--ember);
+  font-size: 1.05rem;
   line-height: 1;
+  margin-bottom: 0.75rem;
+  flex-shrink: 0;
 }
 
 .info-card-title {
   font-family: var(--font-display);
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   color: var(--soil);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
 }
 
 .info-card-desc {
-  font-size: 0.875rem;
+  font-size: 0.825rem;
   line-height: 1.65;
   color: var(--bark);
 }
 
 /* dark variant for "Why Hire" section */
 .section-dark .info-card {
-  background: rgba(255,255,255,0.06);
-  border-left-color: var(--straw);
+  background: rgba(255,255,255,0.05);
+  border-color: rgba(255,255,255,0.18);
+}
+
+.section-dark .info-card::before {
+  border-color: var(--straw);
 }
 
 .section-dark .info-card-title { color: var(--cream); }
