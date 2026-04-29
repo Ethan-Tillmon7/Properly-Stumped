@@ -893,15 +893,6 @@ details.faq-item[open] summary { color: var(--ember); }
   display: block;
 }
 
-/* ============ HERO BACKGROUND IMAGE ============ */
-.hero::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: url('images/background.jpg') center 35% / cover no-repeat;
-  opacity: 0.25;
-  z-index: 0;
-}
 
 /* ============ PHOTO BANNER ============ */
 .photo-banner {
