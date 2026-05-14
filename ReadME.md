@@ -71,5 +71,5 @@ The site is deployed via Netlify with automatic deploys on every push to `main`.
 
 ## Contact
 
-- **Phone/Text:** (816) 237-8758
+- **Phone/Text:** (816) 783-0197
 - **Email:** ericoconnor@properlystumped.org
